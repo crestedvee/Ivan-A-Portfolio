@@ -30,7 +30,7 @@ let pdetail4 = document.getElementById("project-detail4");
     i = (i + 1) % pics.length; 
   }
   setInterval(toggle, 9000);
-})();;
+})();
 
 
 

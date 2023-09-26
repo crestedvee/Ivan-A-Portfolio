@@ -392,6 +392,10 @@
   border: 2px groove;
 }
 
+#msg {
+  margin-bottom: 1rem;
+}
+
 .btn-div2 {
   width: 100%;
   background-color: brown;
