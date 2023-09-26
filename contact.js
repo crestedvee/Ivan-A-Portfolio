@@ -3,6 +3,8 @@ let headerView = document.getElementsByClassName("menu-child")[0];
 let headerAbout = document.getElementById("header-about");
 let contactBody = document.getElementById("main-body");
 let footer = document.getElementById("footer");
+let selectElement = document.querySelector("#toggle-button2");
+let htmlBody = document.getElementById("body");
 
 (function() {
   let i = 0;
@@ -16,6 +18,16 @@ let footer = document.getElementById("footer");
 })();;
 
 
+
+selectElement.addEventListener("change", (e) => {
+  const value = e.target.value;
+
+  if (value === "light") {
+    htmlBody.style.backgroundColor = "brown";
+  } else {
+    htmlBody.style.backgroundColor = "#000000";
+  }
+});
 
 function changeVieMobileView() {
   headerView.classList.add('classHeader-nav');

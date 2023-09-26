@@ -37,6 +37,20 @@
   align-items: center;
  }
 
+ .toggle-mode {
+  border-radius: 0.3rem;
+  width: 7rem;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.toggle-mode:hover {
+  background-color: #FFFFFF;
+  color: brown;
+}
+
  .menu-child a {
   font-size: 1.2rem;
   color: #FFFFFF;
@@ -493,6 +507,14 @@
     font-size: 1rem;
   }
 
+  .toggle-mode {
+    align-self: center;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    height: 2rem;
+  }
+
   .menu-nav {
     position: absolute;
     top: 0;
@@ -610,7 +632,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 198rem;
+    top: 203rem;
   }
 
 }
@@ -676,7 +698,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 190rem;
+    top: 203rem;
   }
 }
 
