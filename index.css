@@ -7,8 +7,8 @@
  body {
   background-color: brown;
   display: grid;
-  grid-template-areas: "header" "mainBody" "footer";
-  grid-template-rows: 0.5fr 1.5fr 4rem;
+  grid-template-areas: "header" "mainBody";
+  grid-template-rows: 0.5fr 1.5fr;
   gap: 1rem;
   margin: 0px;
   padding: 0px;
@@ -164,20 +164,23 @@
 .section-header {
   font-size: 1.5rem;
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
   text-decoration: underline;
   color: #282C35;
+  padding-top: 1rem;
 }
 
 .main-body {
   grid-area: mainBody;
+  display: grid;
+  grid-template-areas: "aboutMe" "Projects" "Skills" "Contact" "footer";
+  grid-template-rows: 0.5fr 0.5fr 0.4 0.5fr 0.1fr;
+  gap: 1rem;
 }
 
 /* body about me section*/
 .about-me-text {
+  grid-area: aboutMe;
   background-color: #FFFFFF;
-  padding-bottom: 2rem;
 }
 
 
@@ -191,11 +194,9 @@
 /*body project section*/
 
 .my-projects {
+  grid-area: Projects;
   background-color: #ffffff;
-  width: 100%;
-  margin-top: 1rem;
   padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .project-list {
@@ -241,11 +242,8 @@
 /* body skills section*/
 
 .my-skills {
-  width: 100%;
+  grid-area: Skills;
   background-color: #FFFFFF;
-  margin-top: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
 }
 
 
@@ -255,15 +253,12 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-  padding-bottom: 4rem;
 }
 
 .my-main-skills div {
   width: 6rem;
   text-align: center;
   color: brown;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .flip {
@@ -338,23 +333,136 @@
   }
 }
 
-
-/* body footer section*/
-
-.footer {
-  grid-area: footer;
-  background: url(img12.jpeg);
+/* body contact section*/
+.contact {
+  grid-area: Contact;
+  background-color: #ffffff;
 }
 
-.footer-1 {
+.h2-contact {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;  
+}
+
+
+#h2-contact {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  color: #FFFFFF;
+  width: 50%;
+  background-color: brown;
+}
+
+.contact-form {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.main-form {
+  border: 1px groove;
+  width: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.contact-form div {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "user-label input";
+  gap: 0.5rem;
+}
+
+.user-label {
+  grid-area: user-label;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #282C35;
+}
+
+.username {
+  grid-area: input;
+  line-height: 1.5rem;
+  border: 2px groove;
+}
+
+.btn-div2 {
+  width: 100%;
+  background-color: brown;
+  height: 2rem;
+  align-content: center;
+  justify-content: right;
+}
+
+.btn-submit {
+  color: brown;
+  line-height: 1.5rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  width: 7rem;
+  font-weight: bolder;
+  border: 1px groove;
+  background-color: #ffffff;
+  margin: auto;
+}
+
+.btn-submit:hover {
+  background-color:  rgb(221, 59, 59);
+  color: #ffffff;
+}
+
+.line {
+  border: 0;
+  font-size: 1rem;
+  height: 1.5em;
+  line-height: 1em;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.line::before {
+  content: "";
+  background: linear-gradient(to right, transparent, #572a11, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 0.1rem;
+  overflow: hidden;
+}
+
+.line::after {
+  background-color: grey;
+  color: #ffffff;
+  content: attr(data-content);
+  line-height: 1.5em;
+  padding: 0 7px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-div {
   display: inline-flex;
   justify-content: space-around;
+  margin-top: 2rem;
   width: 100%;
-  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
-.copy-right {
-  color: #ffffff;
+.icon-div {
+  display: inline-flex;
+  margin-top: 1rem;
 }
 
 .fa-phone {
@@ -362,36 +470,6 @@
   animation: bounce 2s ease infinite alternate;
   font-size: 1rem;
   padding-right: 1rem;
-}
-
-@keyframes bounce {
-  70% {
-    transform: translateY(0%);
-  }
-
-  80% {
-    transform: translateY(-15%);
-  }
-
-  90% {
-    transform: translateY(0%);
-  }
-
-  95% {
-    transform: translateY(-7%);
-  }
-
-  97% {
-    transform: translateY(0%);
-  }
-
-  99% {
-    transform: translateY(-3%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .fa-envelope {
@@ -408,14 +486,6 @@
   padding-right: 1rem;
 }
 
-.fa-facebook,
-.fa-linkedin,
-.fa-twitter,
-.fa-instagram {
-  color: #ffffff;
-  padding-top: 0.5rem;
-  padding-left: 1rem;
-}
 
 @keyframes grow {
   from {
@@ -425,10 +495,6 @@
   to {
     transform: scale(1);
   }
-}
-
-.grow {
-  animation: grow 10s ease infinite;
 }
 
 
@@ -448,6 +514,40 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
 }
+
+
+
+/* body footer section*/
+
+.footer {
+  grid-area: footer;
+  background: url(img12.jpeg);
+  
+}
+
+.footer-1 {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.copy-right {
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+
+
+.fa-facebook,
+.fa-linkedin,
+.fa-twitter,
+.fa-instagram {
+  color: #ffffff;
+  padding-left: 1rem;
+}
+
+
+/* body footer section*/
 
 /* Classes*/
 
@@ -470,7 +570,7 @@
   }
 
   body {
-    grid-template-rows: 32rem 1fr 4rem;
+    grid-template-rows: 32rem 1fr;
     margin: 0px;
     padding: 0px;
   }
@@ -606,14 +706,13 @@
 
   /* main body*/
   /* body about me section*/
-
+  
   .main-body {
     position: absolute;
     top: 27rem;
     left: 0;
     right: 0;
   }
-
 
   /*body project section*/
 
@@ -625,9 +724,30 @@
     width: 70%;
   }
 
+  /* body skills section*/
+  .my-main-skills {
+    padding-top: 2rem;
+  }
+
+  .main-form {
+    width: 70%;
+  }
+
+  #h2-contact {
+    width: 70%;
+  }
+
+  .contact-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*body contact section*/
+
+
 
   /* body footer section*/
-
+/*
   .footer {
     position: absolute;
     left: 0;
@@ -635,9 +755,9 @@
     top: 203rem;
   }
 
-}
+}*/
 
-
+/*
 @media only screen and (min-width: 320px){
 
   .footer {
@@ -742,7 +862,7 @@
     right: 0;
     top: 139.5rem;
   }
-}
+} 
 
-
+*/
 
