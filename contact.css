@@ -660,7 +660,7 @@ body {
   padding: 1rem;
   display: grid;
   grid-template-areas: "label input";
-  grid-template-columns: 9rem 1fr;
+  grid-template-columns: 8rem 9rem;
 }
 
 .h2-contact {
@@ -683,7 +683,7 @@ body {
   border-radius: 2rem;
   font-size: 1.1rem;
   border: 1px groove;
-  margin-left: 10rem;
+  margin-left: 8rem;
 }
 
 
