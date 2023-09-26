@@ -614,3 +614,113 @@
   }
 
 }
+
+
+@media only screen and (min-width: 320px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 222rem;
+  }
+}
+
+@media only screen and (min-width: 375px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 218rem;
+  }
+}
+
+@media only screen and (min-width: 360px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 217.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 390px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 210rem;
+  }
+}
+
+@media only screen and (min-width: 412px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 202.5rem;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 414px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 190rem;
+  }
+}
+
+@media only screen and (min-width: 820px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 168.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 177rem;
+  }
+}
+
+
+@media only screen and (min-width: 1024px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 164.5rem;
+  }
+}
+
+@media only screen and (min-width: 1280px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 139.5rem;
+  }
+}
+
+
+

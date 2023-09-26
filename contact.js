@@ -25,12 +25,12 @@ const changeView = () => {
   if(headerView.classList.toggle('active')){
     headerAbout.style.top = "9rem";
     contactBody.style.top = "33.7rem";
-    footer.style.top = "83.2rem"
+    footer.style.display = "none";
    // footerSection.style.top = "192rem";
   } else {
       headerAbout.style.top = "2.3rem";
       contactBody.style.top = "27rem";
-      footer.style.top = "76.5rem";
+      footer.style.display = "block";
   //  footerSection.style.top = "182rem";
   }
 }

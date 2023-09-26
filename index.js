@@ -25,13 +25,14 @@ const changeView = () => {
   if(headerView.classList.toggle('active')){
     headerAbout.style.top = "11rem";
     mainBody.style.top = "35.7rem";
-    footer.style.top = "206.7rem";
+    footer.style.display = "none";
   } else {
       headerAbout.style.top = "2.3rem";
       mainBody.style.top = "27rem";
-      footer.style.top = "198rem";
+      footer.style.display = "block";
   }
 }
 
 
 mobileMenu.addEventListener("click", changeView);
+

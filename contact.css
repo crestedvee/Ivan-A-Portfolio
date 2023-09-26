@@ -646,6 +646,7 @@ body {
 .main-body {
   position: absolute;
   top: 27rem;
+  width: 100%;
 }
 
 .main-form {
@@ -687,7 +688,7 @@ body {
 
 
 .contact-div {
-
+  flex-wrap: wrap;
 }
 
 /*footer*/
@@ -697,4 +698,116 @@ body {
   width: 100%;
 }
 
+}
+
+
+
+@media only screen and (min-width: 320px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .user-label {
+    grid-area: label;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  
+  .username {
+    grid-area: input;
+    line-height: 1.5rem;
+    border: 2px groove;
+  }
+
+
+}
+
+@media only screen and (min-width: 375px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 360px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+@media only screen and (min-width: 390px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 412px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 414px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 820px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+@media only screen and (min-width: 1024px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px){
+
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
 }
