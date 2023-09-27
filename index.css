@@ -253,12 +253,15 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .my-main-skills div {
   width: 6rem;
   text-align: center;
   color: brown;
+  padding-top: 2rem;
 }
 
 .flip {
