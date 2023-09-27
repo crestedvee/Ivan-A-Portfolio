@@ -10,7 +10,7 @@ setInterval(() =>{
 },400);
 
 
-setInterval(() =>{
+/*setInterval(() =>{
   changeBackgroundColor(subHeader2);
-},400);
+},400);*/
 

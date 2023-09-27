@@ -490,6 +490,10 @@
   padding-right: 1rem;
 }
 
+.grow {
+  animation: grow 5s ease infinite alternate;
+}
+
 
 @keyframes grow {
   from {
